@@ -8,6 +8,9 @@ urlpatterns = [
     path('', include('person.urls')),
     path('', include('menu.urls')),
     path('', include('reservation.urls')),
+    path('api/v1/', include("menu.urls")),
+    path('api/v1/', include("person.urls")),
+    path('api/v1/', include("reservation.urls")),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

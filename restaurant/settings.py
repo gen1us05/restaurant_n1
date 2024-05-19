@@ -33,10 +33,14 @@ INSTALLED_APPS = [
     #extensions
     'django_extensions',
 
+    #frameworks
+    'rest_framework',
+
     #apps
     'menu',
     'person',
     'reservation',
+
 ]
 
 MIDDLEWARE = [
