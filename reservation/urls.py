@@ -9,5 +9,5 @@ router.register('tables', viewset=TableViewSet)
 router.register('book-table', viewset=BookTableViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
 ]

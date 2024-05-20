@@ -9,5 +9,5 @@ router.register('foods', viewset=FoodsAPIViewSet)
 
 urlpatterns = [
     path('', LandingPageView.as_view(), name='landing'),
-    path("", include(router.urls)),
+    path('api/', include(router.urls)),
 ]
